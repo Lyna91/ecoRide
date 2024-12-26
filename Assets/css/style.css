@@ -1,0 +1,92 @@
+body {
+    background-color: #205D67;
+}
+
+header {
+    background-color: #D8EBB5;
+    color: #205D67;
+    font-family:"Audiowide", serif;
+}
+
+.nav-link {
+    color: #205D67;
+}
+
+footer {
+    display: flex;
+    background-color: #DEBF38;
+    bottom: 0;
+    position: relative;
+}
+
+h1 {
+   font-family:"Audiowide", serif;
+   font-size: #205D67;
+}
+
+h2 {
+    font-family:"Audiowide", serif;
+    color: #DEBF38;
+
+}
+
+p, h3 {
+    font-family: "Roboto", serif;
+}
+
+h3 {
+    color: #D8EBB5;
+}
+
+.formAcceuil input {
+    background-color: #D8EBB5;
+}
+
+.formCovoiturage input {
+    background-color: #D8EBB5;
+}
+
+label {
+    color: #D8EBB5;
+}
+
+input {
+    color:#205D67;
+}
+
+a {
+    color:#DEBF38;
+}
+
+.mobile {
+    font-family: "Roboto", serif;
+
+}
+
+.legendRecherche {
+    font-family: "Roboto", serif;
+    color: #D8EBB5;
+}
+
+.resultatRecherche {
+    font-family: "Roboto", serif;
+    color: #D8EBB5;
+}
+
+i {
+    color: #D8EBB5;
+}
+
+@media only screen and (max-width: 768px){
+    .cards {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .mobile {
+        display: none;
+        visibility: hidden;
+    }
+}

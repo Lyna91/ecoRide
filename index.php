@@ -1,19 +1,62 @@
-<!DOCTYPE html>
-<html lang="fr">
+<?php
+require_once 'templates/header.php';
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="shortcut icon" href="/Assets/images/icone.png">
-    <title>EcoRide</title>
-</head>
+<div>
+    <div class="card">
+        <img src="/Assets/images/imageEcranAcceuil.jpg" class="img-fluid" alt="image acceuil">
+        <div class="card-img-overlay">
+            <h1 class="card-title">Bienvenue sur l'application EcoRide !</h1>
+            <p class="card-text">Partagez la route avec d'autres EcoRiders</p>
+        </div>
+    </div>
+</div>
+<div class="formAcceuil my-4 container">
+    <form method="get">
+        <h3 class="text-center my-4">Rechercher une course</h3>
+        <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Ville de départ</label>
+            <input type="text" class="form-control" id="villeDepart" placeholder="Paris">
+        </div>
+        <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Ville d'arrivée</label>
+            <input type="text" class="form-control" id="villeArrivee" placeholder="Lille">
+        </div>
+        <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Date</label>
+            <input type="date" class="form-control" id="villeArrivee" placeholder="Lille">
+        </div>
+        <button type="button" class="btn btn-warning">C'est parti !</button>
+    </form>
+</div>
+<section class="cards">
+    <div class="d-flex justify-content-around">
+        <div class="card my-4 bg-dark text-white" style="width: 500px">
+            <img src="/Assets/images/imageRoue.jpg" class="card-img-top d-block w-100 opacity-50" alt="...">
+            <div class="card-img-overlay">
+                <h5 class="card-title text-center">Derniers covoiturages</h5>
+                <p>Paris - Lille / le 14/12/23 / EcoRider Filipe</p>
+                <p>Lille - Perpignan / le 15/12/23 / EcoRider 2</p>
+            </div>
+        </div>
+        <div class="card my-4 bg-dark text-white" style="width: 500px">
+            <img src="/Assets/images/road-6774756_640.jpg" class="card-img-top d-block w-100 opacity-50" alt="...">
+            <div class="card-img-overlay">
+                <h5 class="card-title">Article du jour : L'éco conduite c'est quoi ?</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mobile">
+    <div class="links my-4">
+        <a href="/covoiturage.php">Les derniers co-voiturages</a>
+    </div>
+    <div class="my-4">
+        <a href="/covoiturage.php">L'éco conduite c'est quoi'</a>
+    </div>
+</section>
 
-<body>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-</body>
-
-</html>
+<?php
+require_once 'templates/footer.php';
+?>
