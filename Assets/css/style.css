@@ -34,6 +34,11 @@ p, h3 {
     font-family: "Roboto", serif;
 }
 
+h4 {
+    font-family: "Audiowide", serif;
+    color: #DEBF38;
+}
+
 h3 {
     color: #D8EBB5;
 }
@@ -75,6 +80,32 @@ a {
 
 i {
     color: #D8EBB5;
+}
+
+#star {
+    color: #DEBF38;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #44A84B;
+    background-color: #DEBF38;
+    font-family: "Roboto", bold, serif;
+    color: #205D67;
+    padding: 5px 25px;
+    text-align: center;
+}
+
+.resultats {
+    border-style: solid;
+    border-color: #DEBF38;
+    border-radius: 10px;
+    padding: 10px 20px;
 }
 
 @media only screen and (max-width: 768px){

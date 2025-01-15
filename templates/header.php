@@ -33,10 +33,10 @@
                             <a class="nav-link" href="/covoiturage.php">Les covoiturages</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Connexion</a>
+                            <a class="nav-link" href="/signin.php">Connexion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="/contact.php">Contact</a>
                         </li>
                     </ul>
                 </div>

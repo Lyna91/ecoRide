@@ -7,7 +7,7 @@ require_once 'templates/header.php';
         <img src="/Assets/images/imageEcranAcceuil.jpg" class="img-fluid" alt="image acceuil">
         <div class="card-img-overlay">
             <h1 class="card-title">Bienvenue sur l'application EcoRide !</h1>
-            <p class="card-text">Partagez la route avec d'autres EcoRiders</p>
+            <p class="card-text">Bienvenue sur l'application de covoiturage et rejoignez la communauté d'EcoRiders. Nous vous souhaitons de merveilleux trajets futurs !</p>
         </div>
     </div>
 </div>
@@ -26,7 +26,7 @@ require_once 'templates/header.php';
             <label for="disabledTextInput" class="form-label">Date</label>
             <input type="date" class="form-control" id="villeArrivee" placeholder="Lille">
         </div>
-        <button type="button" class="btn btn-warning">C'est parti !</button>
+        <button type="button">C'est parti !</button>
     </form>
 </div>
 <section class="cards">
