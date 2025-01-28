@@ -15,7 +15,13 @@ require_once 'templates/header.php';
     <div class="text-center my-4">
         <button type="submit">Envoyer le message</button>
     </div>
+    <p>Votre message sera traité dans les plus brefs délais</p>
 </div>
+
+<div class=" container my-4">
+    <a href="/index.php">Retour à l'acceuil</a>
+</div>
+
 
 <?php
 require_once 'templates/footer.php';

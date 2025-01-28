@@ -1,5 +1,6 @@
 body {
     background-color: #205D67;
+    position: relative;
 }
 
 header {
@@ -8,35 +9,36 @@ header {
     font-family:"Audiowide", serif;
 }
 
+footer {
+    bottom: 0;
+    position: relative;
+    background-color: #DEBF38;
+}
+
+a {
+    color: #44A84B;
+}
+
 .nav-link {
+    color:#205D67
+
+}
+
+.titreAccueil {
     color: #205D67;
 }
 
-footer {
-    display: flex;
-    background-color: #DEBF38;
-    bottom: 0;
-    position: relative;
-}
-
-h1 {
-   font-family:"Audiowide", serif;
-   font-size: #205D67;
+.paraAcceuil {
+    color: #205D67;
 }
 
 h2 {
     font-family:"Audiowide", serif;
     color: #DEBF38;
-
 }
 
-p, h3 {
+p, h4 {
     font-family: "Roboto", serif;
-}
-
-h4 {
-    font-family: "Audiowide", serif;
-    color: #DEBF38;
 }
 
 h3 {
@@ -44,38 +46,58 @@ h3 {
 }
 
 .formAcceuil input {
+    border-color: #44A84B;
     background-color: #D8EBB5;
+    border-style: solid;
+    border-radius: 10px;
 }
 
 .formCovoiturage input {
+    border-color: #44A84B;
     background-color: #D8EBB5;
+    border-style: solid;
+    border-radius: 10px;
 }
 
 label {
-    color: #D8EBB5;
+    color: #44A84B;
 }
 
 input {
     color:#205D67;
 }
 
-a {
-    color:#DEBF38;
-}
-
 .mobile {
     font-family: "Roboto", serif;
-
 }
 
 .legendRecherche {
     font-family: "Roboto", serif;
-    color: #D8EBB5;
+    color: #44A84B;
 }
 
 .resultatRecherche {
     font-family: "Roboto", serif;
     color: #D8EBB5;
+}
+
+.card {
+    background-color: #205D67;
+    font-family: "Roboto", serif;
+    color: #D8EBB5;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+#fleche {
+    display: flex;
+    height: 50px;
+}
+
+.formCovoiturage {
+    background-color: #D8EBB5;
+    border-radius: 10px;
+    padding: 10px 20px;
 }
 
 i {
@@ -101,6 +123,19 @@ button {
     text-align: center;
 }
 
+.detailTrajet {
+    border-style: solid;
+    border-color: #DEBF38;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #D8EBB5;
+}
+
+
+.bi-star-fill {
+    color: #DEBF38;
+}
+
 .resultats {
     border-style: solid;
     border-color: #DEBF38;
@@ -108,11 +143,20 @@ button {
     padding: 10px 20px;
 }
 
+.adresseTrajet {
+    margin-right: 20px;
+}
+ iframe {
+    border-radius: 10px;
+ }
+
 @media only screen and (max-width: 768px){
     .cards {
         display: none;
         visibility: hidden;
     }
+
+    
 }
 
 @media only screen and (min-width: 768px){

@@ -2,15 +2,14 @@
 require_once 'templates/header.php';
 ?>
 
-<h2 class="text-center">Les covoiturages</h2>
+<h2 class="text-center my-4">Les covoiturages</h2>
+<!-- section recherche covoiturage -->
 <section class="rechercheCovoiturage">
     <div>
         <form class="container formCovoiturage" method="get">
-            <legend class="legendRecherche">Recherche</legend>
-            <label for="disabledTextInput" class="form-label">Ville de départ</label>
-            <input type="text" class="form-control" id="villeArrivee" placeholder="Paris">
-            <label for="disabledTextInput" class="form-label">Ville d'arrivée</label>
-            <input type="text" class="form-control" id="villeArrivee" placeholder="Lille">
+            <legend class="legendRecherche">Votre recherche</legend>
+            <input type="text" class="form-control my-4" id="villeArrivee" placeholder="Ville de départ">
+            <input type="text" class="form-control my-4" id="villeArrivee" placeholder="Ville d'arrivée">
             <label for="place">nombre de place</label><br>
             <select name="place" id="place">
                 <option value="1">1</option>
@@ -20,44 +19,90 @@ require_once 'templates/header.php';
             </select>
             <label for="date">Date</label>
             <input type="date-time">
-            <button type="submit">C'est parti !</button>
+            <button class="my-4" type="submit">C'est parti !</button>
         </form>
     </div>
 </section>
-<section class="container resultatRecherche">
+<!-- section resultat recherches -->
+<section class="container my-4 resultatRecherche">
     <div>
         <h2 class="text-center">Voici les résultats de votre recherche</h2><br>
-        <div class="resultats">
-            <div class="ecoRider1">
-                <img src="/Assets/images/homme.png" alt="photo ecoRider">
-                <p>EcoRider Filipe <i class="bi bi-lightning-charge"></i></p>
-                <p><i class="bi bi-calendar"></i> 13/12/2023</p>
-            </div>
-            <div class="trajet d-flex justify-content-around align-items-center">
-                <div class="trajetAller my-4">
-                    <p><i class="bi bi-flag"></i> 2 rue de la banque</p>
-                    <p>75002 PARIS <i class="bi bi-geo-alt"></i></p>
+        <div class="resultats my-4">
+            <div class="ecoRider2 p-3 my-4">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-center mb-3">
+                        <img src="/Assets/images/homme.png" alt="photo EcoDriver" class="me-3">
+                        <div>
+                            <p class="mb-1">EcoDriver Filipe <i class="bi bi-lightning-charge"></i></p>
+                            <small><i class="bi bi-calendar3 me-1"></i>13/11/23 à 5h35</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 mb-3 mb-lg-0">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="text-start">
+                                <p class="mb-0"><i class="bi bi-geo-alt-fill text-warning"></i> 2 rue de la Banque<br>75002 PARIS</p>
+                            </div>
+                            <div class="text-center">
+                                <i class="bi bi-circle-fill text-light"></i>
+                                <i class="bi bi-arrow-right-short mx-2 text-light"></i>
+                                <i class="bi bi-flag text-warning"></i>
+                            </div>
+                            <div class="text-end">
+                                <p class="mb-0"><i class="bi bi-geo-alt-fill text-warning"></i> Place de la Mairie<br>21000 DIJON</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex align-items-center justify-content-between">
+                        <div class="text-center">
+                            <p class="mb-0">Places : <strong>2</strong></p>
+                        </div>
+                        <div class="text-center">
+                            <p class="mb-0"><i class="bi bi-cash me-1"></i><strong>22 €</strong></p>
+                        </div>
+                        <a href="/trajet.php"><button>Détails</button></a>
+                    </div>
                 </div>
-                <i class="bi bi-arrow-right"></i>
-                <div class="trajetRetour my-4">
-                    <p><i class="bi bi-flag"></i> Place de la mairie</p>
-                    <p>21000 DIJON <i class="bi bi-geo-alt"></i></p>
-                </div>
-                <div class="nombrePlace my-4">
-                    <p>Places : 2</p>
-                </div>
-                <div class="creditTrajet my-4">
-                    <p><i class="bi bi-cash"></i> 22</p>
-                </div>
-            </div>
-            <div class="text-end">
-                <button type="submit" href="/templates/trajet.php">Détails</button>
             </div>
         </div>
-
+        <div class="container resultats">
+            <div class="ecoRider1 p-3 my-4">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-center mb-3">
+                        <img src="/Assets/images/homme.png" alt="photo EcoDriver" class="me-3">
+                        <div>
+                            <p class="mb-1">EcoDriver Filipe <i class="bi bi-lightning-charge"></i></p>
+                            <small><i class="bi bi-calendar3 me-1"></i>13/11/23 à 5h35</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 mb-3 mb-lg-0">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="text-start">
+                                <p class="mb-0"><i class="bi bi-geo-alt-fill text-warning"></i> 2 rue de la Banque<br>75002 PARIS</p>
+                            </div>
+                            <div class="text-center">
+                                <i class="bi bi-circle-fill text-light"></i>
+                                <i class="bi bi-arrow-right-short mx-2 text-light"></i>
+                                <i class="bi bi-flag text-warning"></i>
+                            </div>
+                            <div class="text-end">
+                                <p class="mb-0"><i class="bi bi-geo-alt-fill text-warning"></i> Place de la Mairie<br>21000 DIJON</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex align-items-center justify-content-between">
+                        <div class="text-center">
+                            <p class="mb-0">Places : <strong>2</strong></p>
+                        </div>
+                        <div class="text-center">
+                            <p class="mb-0"><i class="bi bi-cash me-1"></i><strong>22 €</strong></p>
+                        </div>
+                        <a href="/trajet.php"><button>Détails</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-
 
 <?php
 require_once 'templates/footer.php';

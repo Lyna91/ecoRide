@@ -5,7 +5,7 @@ require_once 'templates/header.php';
 <h2 class="text-center">Connexion</h2>
 
 <div class="container my-4">
-    <form action="" method="post">
+    <form method="post">
         <label for="mail">Votre mail</label>
         <input type="mail" class="form-control my-2" id="mail" placeholder="votre mail">
         <label for="password">Votre mot de passe</label>
@@ -14,6 +14,10 @@ require_once 'templates/header.php';
             <button type="submit">Connexion</button>
         </div>
     </form>
+</div>
+
+<div>
+    <p>Pas encore inscrit ?</p>
 </div>
 
 <?php

@@ -6,8 +6,8 @@ require_once 'templates/header.php';
     <div class="card">
         <img src="/Assets/images/imageEcranAcceuil.jpg" class="img-fluid" alt="image acceuil">
         <div class="card-img-overlay">
-            <h1 class="card-title">Bienvenue sur l'application EcoRide !</h1>
-            <p class="card-text">Bienvenue sur l'application de covoiturage et rejoignez la communauté d'EcoRiders. Nous vous souhaitons de merveilleux trajets futurs !</p>
+            <h1 class="titreAccueil">Bienvenue sur l'application EcoRide !</h1>
+            <p class="paraAcceuil">Bienvenue sur l'application de covoiturage et rejoignez la communauté d'EcoRiders. Nous vous souhaitons de merveilleux trajets futurs !</p>
         </div>
     </div>
 </div>
@@ -16,17 +16,19 @@ require_once 'templates/header.php';
         <h3 class="text-center my-4">Rechercher une course</h3>
         <div class="mb-3">
             <label for="disabledTextInput" class="form-label">Ville de départ</label>
-            <input type="text" class="form-control" id="villeDepart" placeholder="Paris">
+            <input type="text" class="form-control" id="villeDepart" placeholder="Exemple : Paris">
         </div>
         <div class="mb-3">
             <label for="disabledTextInput" class="form-label">Ville d'arrivée</label>
-            <input type="text" class="form-control" id="villeArrivee" placeholder="Lille">
+            <input type="text" class="form-control" id="villeArrivee" placeholder="Exemple : Lille">
         </div>
         <div class="mb-3">
             <label for="disabledTextInput" class="form-label">Date</label>
-            <input type="date" class="form-control" id="villeArrivee" placeholder="Lille">
+            <input type="date" class="form-control">
         </div>
-        <button type="button">C'est parti !</button>
+        <div class="text-center">
+            <button type="submit" href="#">C'est parti !</button>
+        </div>
     </form>
 </div>
 <section class="cards">
